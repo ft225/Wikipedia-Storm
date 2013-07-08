@@ -1,0 +1,73 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" >
+	<title>Wiki Storm Sunset</title>
+	<meta charset="utf-8" >
+	<link rel="stylesheet" href="css/index.css" />    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js" ></script>
+	<script type="text/javascript" charset="utf-8" src="js/utils.js"></script>
+	<script src="http://127.0.0.1:3000/socket.io/socket.io.js" > </script>
+	<script type="text/javascript" src="js/starter.js"></script>
+	<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+
+<body style="left:3px; top:59px; font: 10px sans-serif" >
+<div id="top" style="height:78px">
+<img src="img/header2.jpg" />
+</div>
+
+<div id="column2" class="interior"><ul>
+<li><a><strong> UTILITY</strong></a> </li>
+<li><a href="https://github.com/nathanmarz/storm">
+      Storm Project
+    </a></li>
+    <li><a href="http://storm-project.net/">
+      About Storm
+    </a></li>
+<li><a href="http://nodejs.org/">
+      Node.js
+    </a></li>
+<li><a class="npm" href="http://npmjs.org/">
+      npm Registry
+    </a></li>
+    <li><a class="npm" href="http://socket.io/">
+      Socket.io
+    </a></li>
+    <li><a class="npm" href="https://gist.github.com/mbostock/4063269">
+      Bubble Chart
+    </a></li>
+     <li><a class="npm" href="http://www.mediawiki.org/wiki/API:Main_page">
+     MediaWiki API
+    </a></li>
+    <li><a class="npm" href="https://github.com/ft225/Wikipedia-Storm">
+      Our Project
+    </a></li>
+ </ul>
+</div>
+<div id="columndx" class="interior"><a href="http://en.wikipedia.org/wiki/Main_Page"><img title="Wikipedia Home" src="img/wiki.jpg" /></a></div>
+
+<div id=logo   style= "margin-top: 150px; text-align: center; width:85% ">
+<font size = 6 style="italic" > 
+<h1 > <span style="color: #007fff">W</span><span style="color: #FFA500">I</span><span style="color: #6B8E23">K</span><span style="color: #FF0000">I</span><span style="color: #007fff">S</span><span style="color: #B20000">U</span><span style="color:#FFFF66">N</span><span style="color: #FFA500">S</span><span style="color: #9966cc">E</span><span style="color: #03C03C">T</span><span>&nbsp;</span></h1>
+</font>
+</div>
+
+<div id= "ricerca" style= "margin-left: 250px;">
+   <font size = 5><h5> Click on the links below to have a real time computation of the last edits of <a title="Wikipedia Home" href ="http://en.wikipedia.org/wiki/Main_Page">Wikipedia</a> with a bubble chart view. Data shows the most active users and the most edited pages</h5></font>
+   <br>
+   <a title="Last edited Wikipedia pages" href="javascript:toggle()" onclick="page()" ><font size=4 ><span>Last Edited Pages</span></font></a>
+   <br><br>
+   <a title="Most active Wikipedia users" href="javascript:toggle();" onclick="user()" ><font size=4 ><span>Most Active Users</span></font></a> 
+
+</div>
+
+<div id="results" style= "display:none; margin-left: 250px">
+<font size = 5><h5> Visualization of the results by <a title="D3.js" href ="http://d3js.org/">D3.js</a></h5></font>
+</div>
+
+<div style="display:none; width:85%; margin-top:100px" align="center" id="loading"><img src="img/ajax-loader.gif" width="220" height="19" /><br>Elaborazione in corso</div>
+
+<div id= footer><button name="nome" onclick="location.href='index.html'">HOMEPAGE</button>
+</div>
+</body>
+</html>
